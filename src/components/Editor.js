@@ -11,7 +11,7 @@ import {
 import { FontAwesome5 } from '@expo/vector-icons';
 
 import StatusAlert from './StatusAlert';
-import { ListContext, StatusContext } from '../ContextContainer';
+import { ListContext, StatusContext } from '../ContextProvider';
 import { useNavigation } from '@react-navigation/native';
 
 const Editor = ({ name, item }) => {

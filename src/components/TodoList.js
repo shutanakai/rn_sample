@@ -14,7 +14,7 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/core';
 import { Alert } from 'react-native';
 
-import { ListContext, StatusContext } from '../ContextContainer';
+import { ListContext, StatusContext } from '../ContextProvider';
 import StatusAlert from './StatusAlert';
 
 const TodoList = ({ completedFlag, name }) => {
