@@ -1,11 +1,10 @@
 import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import SideBar from './SideBar';
+import SideBar from '../components/SideBar';
 import TodoListScreen from '../screen/TodoListScreen';
 import DoneListScreen from '../screen/DoneListScreen';
 
-const MyDrawer = (props) => {
-    console.log(props);
+const DrawerNavigator = () => {
     const Drawer = createDrawerNavigator();
     return (
         <Drawer.Navigator
@@ -26,4 +25,4 @@ const MyDrawer = (props) => {
     );
 };
 
-export default MyDrawer;
+export default DrawerNavigator;

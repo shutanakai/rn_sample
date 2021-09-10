@@ -14,7 +14,7 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/core';
 import { Alert } from 'react-native';
 
-import { ListContext, StatusContext } from '../../App';
+import { ListContext, StatusContext } from '../ContextContainer';
 import StatusAlert from './StatusAlert';
 
 const TodoList = ({ completedFlag, name }) => {
@@ -73,6 +73,7 @@ const TodoList = ({ completedFlag, name }) => {
                                 <Checkbox
                                     colorScheme="emerald"
                                     isChecked={item.isCompleted}
+                                    accessibilityLabel={item.title}
                                     onChange={() =>
                                         handleStatusChange(item.title)
                                     }
