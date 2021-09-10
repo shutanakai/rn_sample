@@ -3,7 +3,7 @@ import React, { createContext, useState } from 'react';
 export const ListContext = createContext();
 export const StatusContext = createContext();
 
-const ContextContainer = ({ children }) => {
+const ContextProvider = ({ children }) => {
     const initialList = [
         { title: '勉強', isCompleted: true },
         { title: '昼寝', isCompleted: false },
@@ -27,4 +27,4 @@ const ContextContainer = ({ children }) => {
     );
 };
 
-export default ContextContainer;
+export default ContextProvider;

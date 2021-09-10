@@ -3,17 +3,17 @@ import { NativeBaseProvider } from 'native-base';
 import { NavigationContainer } from '@react-navigation/native';
 import 'react-native-gesture-handler';
 
-import ContextContainer from './src/ContextContainer';
+import ContextProvider from './src/ContextProvider';
 import StackNavigator from './src/navigator/StackNavigator';
 
 export default function App() {
     return (
         <NativeBaseProvider>
-            <ContextContainer>
+            <ContextProvider>
                 <NavigationContainer>
                     <StackNavigator />
                 </NavigationContainer>
-            </ContextContainer>
+            </ContextProvider>
         </NativeBaseProvider>
     );
 }
